@@ -1,0 +1,39 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import BlogPost from '../../components/BlogPost.astro';
+
+const breadcrumbs = [
+  { text: 'Home', href: '/' },
+  { text: 'Blog', href: '/blog' },
+  { text: 'Renewable Energy in Supply Chains', href: '/blog/renewable-energy-supply-chains' }
+];
+---
+
+<BlogPost
+  title="Renewable Energy in Supply Chains"
+  date="January 5, 2024"
+  image={{
+    src: "/images/renewable.jpg",
+    alt: "Renewable energy integration"
+  }}
+  breadcrumbs={breadcrumbs}
+>
+  <p>The integration of renewable energy sources in supply chain operations is transforming how businesses manage their energy needs while reducing environmental impact.</p>
+
+  <h2>Key Renewable Technologies</h2>
+  <ul>
+    <li>Solar power installations</li>
+    <li>Wind energy systems</li>
+    <li>Biomass energy utilization</li>
+    <li>Energy storage solutions</li>
+  </ul>
+
+  <h2>Implementation Strategies</h2>
+  <p>Successful integration of renewable energy requires careful planning and strategic implementation. This includes assessing energy needs, selecting appropriate technologies, and developing robust maintenance protocols.</p>
+
+  <h2>Cost Benefits</h2>
+  <p>While initial investment in renewable energy infrastructure can be significant, long-term cost savings and environmental benefits make it an increasingly attractive option for supply chain operations.</p>
+
+  <h2>Future Developments</h2>
+  <p>Emerging trends include improved energy storage technologies, smart grid integration, and innovative financing models for renewable energy projects.</p>
+</BlogPost>
